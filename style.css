@@ -1,6 +1,33 @@
-h4{
-    color:black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:gainsboro;
+*{
+    text-align: center;
+    font-style: unset;
+    color: black;
+}
+
+li{
+    color: red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.class{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#main{
+    color: green;
+    font-weight:lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li[draggable="True"]{
+    text-align: center;
+    color:blue;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
