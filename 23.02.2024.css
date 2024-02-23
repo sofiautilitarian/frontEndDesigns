@@ -1,0 +1,106 @@
+
+li{
+    color: red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+    list-style-position: inside;
+}
+
+.class{
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#main{
+    color: green;
+    font-weight:lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li[draggable="True"]{
+    text-align: center;
+    color:blue;
+    font-weight: lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#colorvocabRed{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-weight: normal;
+}
+
+
+#colorvocabBlue{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:blue;
+    font-weight: normal;
+}
+
+#colorvocabOrange{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:orange;
+    font-weight: normal;
+}
+
+#colorvocabPink{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: pink;
+    font-weight: normal;
+}
+
+#colorvocabGreen{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:green;
+    font-weight: normal;
+}
+
+#colorvocabYellow{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:yellow;
+    font-weight: normal;
+}
+
+#colorvocabViolet{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:violet;
+    font-weight: normal;
+}
+
+#colorvocabImage{
+    height: 200px;
+    width: 200px;
+}
+
+/* Task : Adding CSS Importance, Type, Specificity, Position */
+
+
+.box {
+    background-color: blue;
+    padding: 10px;
+  }
+  
+  p {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+
+.inner-box{
+    background-color: red;
+    padding: 10px;
+}
+
+#outer-box{
+    background-color: purple;
+    padding: 10px;
+}
+
+.white-text{
+    color: white;
+    margin:0;
+    padding:0;
+}
