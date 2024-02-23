@@ -1,8 +1,3 @@
-*{
-    
-    font-style: unset;
-    color: black;
-}
 
 li{
     color: red;
@@ -78,4 +73,57 @@ li[draggable="True"]{
 #colorvocabImage{
     height: 200px;
     width: 200px;
+}
+
+/* Task : Adding CSS Importance, Type, Specificity, Position */
+
+
+.box {
+    background-color: blue;
+    padding: 10px;
+  }
+  
+  p {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+
+.inner-box{
+    background-color: red;
+    padding: 10px;
+}
+
+#outer-box{
+    background-color: purple;
+    padding: 10px;
+}
+
+#newid{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    font-size: larger;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-left: 600px;
+    align-items: center;
+}
+
+a{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    font-size: larger;
+    font-weight: normal;
+}
+
+#centering-image{
+    margin-left:300px;
+}
+
+.white-text{
+    color: white;
+    margin:0;
+    padding:0;
 }
