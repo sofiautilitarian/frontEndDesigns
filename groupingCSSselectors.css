@@ -13,3 +13,8 @@ h1, h2{
 .box .list{
     color: blue;
 }
+
+
+li.done{
+    color: seagreen;
+}
