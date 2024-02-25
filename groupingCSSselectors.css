@@ -4,7 +4,12 @@ h1, h2{
 }
 
 
-.list> .done{
+.box > .done{
     color: firebrick;
 }
 
+/* descendant selector */
+
+.box .list{
+    color: blue;
+}
