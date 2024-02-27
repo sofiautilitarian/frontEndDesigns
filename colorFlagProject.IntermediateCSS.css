@@ -1,0 +1,78 @@
+/* Write your code here: */
+h1, h2{
+    color: blueviolet;
+}
+
+
+.box > .done{
+    color: firebrick;
+}
+
+/* descendant selector */
+
+.box .list{
+    color: blue;
+}
+
+
+li.done{
+    color: seagreen;
+}
+
+/*Combining combiners where two elements need to be selected for better specification */
+ul p.done{
+    font-size: 0.5rem;
+}
+
+.blue-box{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    height: 300px;
+    width: 500px;
+    color: blue;
+    background-color: blue;
+}
+
+.red-circle{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: red;
+    background-color: red;
+}
+
+
+.flag{
+    height:600px;
+    width:900px;
+    background-color: red;
+    left: 450px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.flag div div p{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 14px;
+    left: 350px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.flag div div{
+    height: 300px;
+    width: 900px;
+    background-color: navy;
+    position: absolute;
+    top: 175px;
+}
