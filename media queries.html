@@ -11,26 +11,106 @@
     body {
       background-color: white;
     }
+
+    div2{
+      display: inline-block;
+      width: 15%;
+    }
+
+    div{
+      display: inline-block;
+      width: 40%;
+    }
+    #divison1{
+      float:left;
+      
+    }
+
+    #divison2{
+      float:right;
+      
+    }
     .first{
       font-weight: bolder;
       font-size: xx-large;
-      float: left;
     }
     span{
       color: navy;
     }
 
-    img{
-      display: inline-block;
+    #image{
+      float: left;
     }
-    p{
-      float: right;
+
+    #image2{
+      float: left;
+    }
+    #paragraph{
+      
+      font-family: Georgia;
+      font-size: 1.4rem;
+      font-weight: normal;
+      font-stretch: condensed;
+    }
+
+    #spacer{
+      clear:both;
+      align-items: center;
+
     }
     /* for iPhone pro 12 */
-    @media (min-width: 319px) and (max-width: 480px){
-      img{
-        display: inline-block;
-      }
+    @media (min-width: 320) and (max-width: 430){
+      body {
+      background-color: white;
+    }
+
+    div{
+      display: block;
+      clear: both;
+    }
+
+    #division1{
+      display: block;
+      clear:both
+    }
+
+    #division2{
+      display: block;
+      clear:both;
+    }
+    
+
+    #image{
+      display: block;
+      clear:both;
+    }
+
+    #image2{
+      display: block;
+      clear:both;
+    }
+
+    
+    .first{
+      font-weight: bolder;
+      font-size: xx-large;
+    }
+    span{
+      color: navy;
+    }
+    #paragraph{
+      
+      font-family: Georgia;
+      font-size: 1.4rem;
+      font-weight: normal;
+      font-stretch: condensed;
+    }
+
+    #spacer{
+      clear:both;
+      align-items: center;
+
+    }
     }
 
   </style>
@@ -38,19 +118,28 @@
 
 <body>
 
-  <img src = https://static.wixstatic.com/media/b0ee0c_16c44b2e693a4100a934d01a73069df2~mv2.png/v1/fill/w_744,h_71,al_c,lg_1,q_85,enc_auto/b0ee0c_16c44b2e693a4100a934d01a73069df2~mv2.png>
+  <img src = "https://static.wixstatic.com/media/b0ee0c_16c44b2e693a4100a934d01a73069df2~mv2.png/v1/fill/w_744,h_71,al_c,lg_1,q_85,enc_auto/b0ee0c_16c44b2e693a4100a934d01a73069df2~mv2.png" height="20px" width="300px">
   <br>
-  <p class = "first">I am a<span> Minimalistic</span><br>Photographer based in Dhaka</p>
+  <p class = "first">I am a<span> Minimalistic</span> Photographer<br>based in Dhaka</p>
 
-  <br>
-  <img src = "https://static.wixstatic.com/media/b0ee0c_0d786303f2fd4502b22f02265d43c1ff~mv2.jpg/v1/fill/w_925,h_1156,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b0ee0c_0d786303f2fd4502b22f02265d43c1ff~mv2.jpg" height="370px" width="297px">
-  <p><h5>South Bonosree, Dhaka</h5><br>Photography invites us to see the world through a different lens. A reminder that happiness can be found in the everyday. In each snapshot lies a piece of our story</p>
+  <div id = "division1">
+  <img id = "image" src = "https://static.wixstatic.com/media/b0ee0c_0d786303f2fd4502b22f02265d43c1ff~mv2.jpg/v1/fill/w_925,h_1156,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b0ee0c_0d786303f2fd4502b22f02265d43c1ff~mv2.jpg" height="390px" width="390px">
+  <p id = "paragraph"><br>South Bonosree, Dhaka<br> Photography invites us to see the world 
+  <br> through a different lens. A reminder that 
+  <br> happiness can be found in everyday. 
+  <br> In each snapshot lies a piece of our story</p>
   <!--height: 742
       width: 594-->
-  <img src = "https://static.wixstatic.com/media/b0ee0c_969d35477db84ddd8c6e1f208ccdc706~mv2.jpg/v1/fill/w_925,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b0ee0c_969d35477db84ddd8c6e1f208ccdc706~mv2.jpg" height="370px" width="297px">
+  </div>
+  <div2></div2>
+  <div id = "division2">
+  <img id = "image2" src = "https://static.wixstatic.com/media/b0ee0c_969d35477db84ddd8c6e1f208ccdc706~mv2.jpg/v1/fill/w_925,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b0ee0c_969d35477db84ddd8c6e1f208ccdc706~mv2.jpg" height="390px" width="390px">
   <!--height: 925
       width: 520-->
-  <p><h5>Segunbagicha, Dhaka</h5>Food in front of Shilpakala Academy. The items are: chicken pitha, chicken stick, chicken saslik, chhita ruti, vegetable rolls, gorur bhuri with alu, and deep-fried chicken</p>
+  <p id = "paragraph"> Segunbagicha, Dhaka<br> Food in front of Shilpakala Academy.<br> The items are: chicken pitha,<br> chicken stick, chicken saslik,<br> chhita ruti, vegetable rolls, gorur bhuri with alu,<br> and deep-fried chicken</p>
+</div>
+<footer id = "spacer"></footer>
+
 </body>
 
 </html>
