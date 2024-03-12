@@ -2,7 +2,7 @@
 
 .container {
   display: flex; /* Added display: flex to the container */
-  gap: 135px; /* Add gap property to create space between items */
+  gap: 120px; /* Add gap property to create space between items */
 }
 
 .item1 {
