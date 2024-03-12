@@ -1,38 +1,30 @@
 /* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
 
 .container {
-  
+  display: flex; /* Added display: flex to the container */
+  gap: 135px; /* Add gap property to create space between items */
 }
-  
-.container > * {
-display: flex;
-}
-
 
 .item1 {
-
-flex-basis: 200px;
-max-width: 200px;
-min-width: 50px;
-flex-grow: 1;
-flex-shrink: 1;
-margin-right: 120px;
+  flex-basis: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .item2 {
-flex-basis: 200px;
-max-width: 200px;
-min-width: 200px;
-flex-grow: 1;
-flex-shrink: 1;
-margin-right: 120px;
+  flex-basis: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
-
 .item3 {
-flex-basis: 200px;
-max-width: 400px;
-min-width: 400px;
-flex-grow: 1;
-flex-shrink: 1;
+  flex-basis: 200px;
+  max-width: 400px;
+  min-width: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
