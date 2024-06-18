@@ -68,7 +68,11 @@
 }
 
 /*27*/
-grid-template: "top-left main-area" 60% "bottom-left main-area" 40% / 200px auto;
+/*few more different ways*/
+grid-template: 3fr  2fr / 200px auto;
+/*or*/
+grid-template: 60% 40% / 200px auto;
+
 
 /*28*/
 grid-template: 1fr 50px/ 1fr 4fr;
