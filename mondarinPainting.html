@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    .body {
+      display: grid;
+      grid-template-rows: repeat(10, 1fr); /* Updated to grid-template-rows */
+      grid-template-columns: repeat(10, 1fr); /* Updated to grid-template-columns */
+      height: 100vh; /* Full viewport height */
+    }
+
+    .img1 {
+      background-color: whitesmoke; /* Set background color */
+      grid-area: 1 / 1 / 2 / 5;
+    }
+
+    .img2 {
+      background-color: rgb(242, 187, 8); /* Set background color */
+      grid-area: 1 / 6 / 2 / 10; /* Adjusted grid-area for img2 */
+    }
+
+    .img3 {
+      background-color: red; /* Set background color */
+      grid-area: 2 / 1 / 9 / 5; /* Adjusted grid-area for img3 */
+    }
+
+    .img5 {
+      background-color: rgb(242, 187, 8); /* Set background color */
+      grid-area: 2 / 6 / 7 / 10; /* Adjusted grid-area for img5 */
+    }
+
+    /* Optional: Styling for the grid items */
+    .img1, .img2, .img3, .img5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <div class="img1"></div>
+  <div class="img2"></div>
+  <div class="img3"></div>
+  <div class="img5"></div>
+</body>
+
+</html>
