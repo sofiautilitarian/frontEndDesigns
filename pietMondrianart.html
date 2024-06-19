@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Layout Methods</title>
+  <style>
+    .body {
+      display: grid;
+      grid-template-rows: repeat(11, 1fr); 
+      grid-template-columns: repeat(12, 1fr); 
+      gap: 1rem;
+      height: 100vh; 
+      background-color: black;
+    }
+
+    .img1 {
+      
+      background-color: white;
+      grid-area: 1 / 1 / 2 / 7;
+    }
+
+    .img2 {
+      
+      background-color: rgb(242, 187, 8); 
+      grid-area: 1 / 7 / 2 / 13; 
+    }
+
+    .img3 {
+      
+      background-color: red; 
+      grid-area: 2 / 1 / 9 / 7; 
+    }
+
+    .img5 {
+      
+      background-color: rgb(242, 187, 8); 
+      grid-area: 2 / 7 / 6 / 13; 
+    }
+
+    .img4{
+      background-color: black;
+      grid-area: 9/ 1 / 12 / 3;
+    }
+
+    .img6{
+      background-color: white;
+      grid-area: 6 / 7 / 9 / 10;
+    }
+    .img7 {
+      
+      background-color: white;
+      grid-area: 6 / 10 / 9 / 13;
+    }
+    .img8{
+      background-color: white;
+      grid-area: 9 / 3 / 13 / 7;
+    }
+    .img9{
+      background-color: white;
+      grid-area: 9 / 7 / 13 / 13;
+    }
+    
+  </style>
+</head>
+
+<body class="body">
+  <div class="img1"></div>
+  <div class="img2"></div>
+  <div class="img3"></div>
+  <div class="img5"></div>
+  <div class="img4"></div>
+  <div class="img6"></div>
+  <div class="img7"></div>
+  <div class="img8"></div>
+  <div class = "img9"></div>
+
+</body>
+
+</html>
