@@ -1,32 +1,243 @@
 <!DOCTYPE html>
-<body style = "text-align: left">
+<html lang="en" data-bs-theme="dark">
 
-	<meta charset="UTF-8">
-	<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <style>
+
+    .one{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btn-primary {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #000000;
+      --bs-btn-border-color: #000000;
+      --bs-btn-hover-color: #0b0a0a;
+      --bs-btn-hover-bg: #ffffff;
+      --bs-btn-hover-border-color: #ffffff;
+      --bs-btn-focus-shadow-rgb: 49, 132, 253;
+      --bs-btn-active-color: #000000;
+      --bs-btn-active-bg: #ffffff;
+      --bs-btn-active-border-color: #ffffff;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #0d6efd;
+      --bs-btn-disabled-border-color: #0d6efd;
+    }
+
+    .btn-outline-secondary {
+      --bs-btn-color: #000000;
+      --bs-btn-border-color: #000000;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #000000;
+      --bs-btn-hover-border-color: #000000;
+      --bs-btn-focus-shadow-rgb: 108, 117, 125;
+      --bs-btn-active-color: #000000;
+      --bs-btn-active-bg: #ffffff;
+      --bs-btn-active-border-color: #ffffff;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #6c757d;
+      --bs-btn-disabled-bg: transparent;
+      --bs-btn-disabled-border-color: #6c757d;
+      --bs-gradient: none;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: .75rem;
+    }
+
+    .d-inline-flex {
+      display: inline-flex !important;
+    }
+
+    .align-items-center {
+      align-items: center !important;
+    }
+
+    .justify-content-center {
+      justify-content: center !important;
+    }
+
+    .text-bg-primary {
+      color: #fff !important;
+      background-color: RGBA(var(--bs-light), var(--bs-bg-opacity, 1)) !important;
+    }
+
+    .fs-2 {
+      font-size: calc(1.325rem + .9vw) !important;
+    }
+
+    .mb-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .bg-gradient {
+      background-image: var(--bs-gradient) !important;
+    }
+  </style>
+</head>
+
+<body class="class1 class2">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-octagon"
+          viewBox="0 0 16 16">
+          <path
+            d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1z" />
+        </svg>
+        Saree Stories</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Stories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Stories of Jamdani Sarees</a></li>
+              <li><a class="dropdown-item" href="#">Stories of Monipuri Sarees</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#"></a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Stories" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
 
-	<h1>
-		Sofia Noor Rafa's Portfolio
-	</h1>
+  <div class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold text-body-emphasis">Tradition blended with Elegance</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">A saree, to me,
+        embodies grace and heritage woven into every fold, each telling a story of tradition and femininity.
+        Its vibrant colors and intricate designs reflect a timeless elegance that celebrates cultural identity and
+        beauty.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Explore saree stories</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Get in Touch</button>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 30vh;">
+      <div class="container px-5">
+        <img
+          src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/449013048_1027741499025096_8807442213180672816_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFGC_YCxxThIS4XAfU2l-1A54ISYsrQ5A7nghJiytDkDh3ZGpkpofojq3dMB3IjyreGxMNHBGMAIT_QNJpu_atX&_nc_ohc=RSmvGTyoEEEQ7kNvgH5sFvh&_nc_ht=scontent.fdac24-3.fna&oh=00_AYDQfm1b4iz6EJFluIiw2u68w30I9lQ9RFhElD4WS8AOqA&oe=6682A32E"
+          class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="700" loading="lazy">
+      </div>
+    </div>
+  </div>
 
-	<h2>
-		I am a soft-application designer and developer
-	</h2>
+  <div class="container px-4 py-5" id="featured-3">
+    <h2 class="pb-2 border-bottom">Why visit Saree Stories</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img
+            src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/449085061_1028999208899325_5528206968370407323_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vqdLxEGyRjEQ7kNvgHy9lRe&_nc_ht=scontent.fdac24-3.fna&oh=00_AYBFiwba-A6z2DuyQzF0HTvhYQtc3xXxg_26oHW2um87PA&oe=6684EE60"
+            width="90" height="90">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Passion for Sarees</h3>
+        <p>I have a personal affection for sarees: especially Jamdani and Taat and slightly Monipuri, I also like silk
+          sarees but not too heavy silk, I like lightweight silk sarees</p>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Immerse</button>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img
+            src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/449303520_1028997602232819_5887117434797530307_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TTOlcqzbjiEQ7kNvgHl981m&_nc_ht=scontent.fdac24-2.fna&oh=00_AYBooYPuYiiLMN_PthsNvA75wsKafM7VgeswWLxAhqpGWQ&oe=6684FDD9"
+            width="90" height="90">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Explore and Spread</h3>
+        <p>Join me in celebrating the beauty and culture of sarees. Share your ideas, stories, and join the community to
+          connect, share, and expand the love for Sarees.</p>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Interact</button>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <img
+            src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/449135348_1029006235565289_4470711291117872665_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=TNgL7EzgnuUQ7kNvgFtUjwX&_nc_ht=scontent.fdac24-1.fna&oh=00_AYDtEnz3TEpLhJtO5qoSd9gzimGZ_y0YcaOz_Ip1YSzSEw&oe=6684DAF8"
+            width="90" height="90">
+        </div>
+        <h3 class="fs-2 text-body-emphasis">Inspire and Celebrate</h3>
+        <p>Explore my personal favorites like Jamdani, Taat, and lightweight silk sarees. I share why these sarees hold
+          a special place in my heart and what makes them unique.</p>
+        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Indulge</button>
+      </div>
+    </div>
+  </div>
 
-	<hr>
+  <div class="container">
+    
+    <div class="container one">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/449448341_1029106882221891_2077950370849096813_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=69a0qKaTSiUQ7kNvgH9U0Kt&_nc_ht=scontent.fdac24-3.fna&oh=00_AYDQ49cHMG37krX0dmL1wPmlW51_Crrmb4wNlEGIMSj5rA&oe=66850332" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://scontent.fdac24-5.fna.fbcdn.net/v/t39.30808-6/449470793_1029106865555226_854494467867113627_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZB4_0Rf2qtQQ7kNvgFSybYW&_nc_ht=scontent.fdac24-5.fna&oh=00_AYDEmuPHMuF5g1wMYhR-2h1t-PZ1RCW7F3u7UBHc3gByVA&oe=6685024F" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://scontent.fdac24-3.fna.fbcdn.net/v/t39.30808-6/449524516_1029106855555227_2883346686870935238_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=SaAGba0fGdwQ7kNvgGegk_V&_nc_ht=scontent.fdac24-3.fna&oh=00_AYA1oVbmRm4DR4fdbXTHYorfos4I-5FqapgBDZfDZU1RZA&oe=66851C4C" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
-	<h2>
-		<a href = "https://github.com/sofiautilitarian/frontEndDesigns/blob/main/movieRankingProject.html">Movie Ranking Project</a>
-	</h2>
-	<img src = "https://static.wixstatic.com/media/b0ee0c_c688c13c435e4cfab9280a4ba6d7c97e~mv2.png/v1/fill/w_925,h_708,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/b0ee0c_c688c13c435e4cfab9280a4ba6d7c97e~mv2.png">
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Saree Stories</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© Sofia Noor Rafa</p>
+    </footer>
+  </div>
 
-	<h2>
-		<a href = "https://github.com/sofiautilitarian/frontEndDesigns/blob/main/Project%20Birthday%20Invite.html">Birthday Invite Project</a>
-	</h2>
-	<img src = "https://static.wixstatic.com/media/b0ee0c_3151e6bac5de45279908169792e0a3c3~mv2.png/v1/fill/w_925,h_586,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/b0ee0c_3151e6bac5de45279908169792e0a3c3~mv2.png">
 
-	<p style = "text-align: center"><a href = "https://static.wixstatic.com/media/b0ee0c_c56779ccafac40eea72d6dd1857d697d~mv2.png/v1/fill/w_781,h_308,al_c,lg_1,q_85,enc_auto/b0ee0c_c56779ccafac40eea72d6dd1857d697d~mv2.png">About me</a>
-	<a href = "https://static.wixstatic.com/media/b0ee0c_5430df1513f543ecb72155818655dc38~mv2.png/v1/fill/w_783,h_204,al_c,lg_1,q_85,enc_auto/b0ee0c_5430df1513f543ecb72155818655dc38~mv2.png">Contact Me</a>
-</p>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
