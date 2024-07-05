@@ -10,9 +10,27 @@
 </head>
 <style>
   #title {
-    background: rgb(234, 71, 126);
-    background: linear-gradient(90deg, rgba(234, 71, 126, 1) 0%, rgba(208, 88, 195, 1) 50%, rgba(19, 169, 233, 1) 100%);
+    background: linear-gradient(300deg, #c04b73, #c75ad6, #69a1e1);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
   }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
 
   .btn-outline-info {
     --bs-btn-color: #000;
@@ -29,6 +47,19 @@
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #0dcaf0;
     --bs-gradient: none;
+  }
+
+  .btn-outline-primary {
+    color: #1b1e21;
+    background-color: transparent;
+    background-image: none;
+    border-color: #000000;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
   }
 
   .btn {
@@ -98,10 +129,26 @@
     position: relative;
   }
 
-  #testimonial div{
+  #testimonial div {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #pricing {
+    background: rgb(206, 197, 197);
+    background: linear-gradient(90deg, rgb(240, 239, 239) 0%, rgba(253, 253, 253, 1) 50%, rgba(254, 254, 254, 1) 100%);
+    text-align: center;
+  }
+
+  #pricing .pricing-header.p-3.pb-md-4.mx-auto.text-center.align-items-center{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #pricing .row.row-cols-1.row-cols-md-3.mb-3.text-center{
+    margin-left: 10%;
+    margin-right: 10%;
   }
 </style>
 
@@ -225,7 +272,7 @@
         <div class="lc-block">
           <img class="img-fluid"
             src="https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/449756626_1031522908646955_7734496118201949719_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Wbtpv5VfTWMQ7kNvgHlIEvu&_nc_ht=scontent.fdac7-1.fna&oh=00_AYDWZoJcrfADsInI1qLHX0lJHHq5bpFM3UsvV4bci4ItHA&oe=66896B4D"
-            width="128" height="128" loading="lazy">
+            width="60" height="30" loading="lazy">
         </div>
       </div>
       <div class="col py-3">
@@ -267,6 +314,65 @@
   <!-- Pricing -->
   <section id="pricing">
 
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center align-items-center">
+      <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+      <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with
+        this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- Footer -->
   <section id="footer">
